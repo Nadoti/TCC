@@ -1,8 +1,16 @@
 import * as S from './styles'
 import Link from 'next/link'
-import {Input} from '../../../components/forms/Input/Input'
+import { Input } from '../../../components/forms/Input/Input'
 import useForm from '../../../hooks/useForm'
 
+// {
+//   "extends": ["next/babel","next/core-web-vitals"]
+// }
+// {
+//   "presets": ["next/babel"],
+//   "plugins": [["styled-components", { "ssr": true,"displayName": true,
+//     "preprocess": false }]]
+//  }  
 
 
 export default function RegisterUser() {
