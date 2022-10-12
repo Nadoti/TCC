@@ -1,5 +1,3 @@
-import React from "react"
-import { useRouter } from 'next/router'
 import { Calendar } from "../main/calendar/Calendar"
 import { Exams } from "../main/exams/Exams"
 import { HomePanel } from "../main/home/HomePanel"

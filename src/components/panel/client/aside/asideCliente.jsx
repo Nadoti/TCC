@@ -1,6 +1,5 @@
 import * as S from './styles'
 import Link from 'next/link'
-import React from 'react'
 import { RiLogoutBoxLine } from "react-icons/ri";
 
 export function AsideCliente({urlRoutes}) {
