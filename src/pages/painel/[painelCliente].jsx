@@ -2,7 +2,7 @@ import Head from "next/head";
 import { AsideCliente } from "../../components/panel/client/aside/asideCliente";
 import {PanelOptions} from "../../components/panel/client/panelOptionsRoutes/PanelOptions";
 import { useRouter } from 'next/router'
-import * as S from "./styles";
+import * as S from "../../styles/painel/styles";
 
 
 export default function PainelCliente() {

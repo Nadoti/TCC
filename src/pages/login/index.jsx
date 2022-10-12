@@ -1,4 +1,4 @@
-import * as S from './styles'
+import * as S from '../../styles/login/styles'
 import Link from 'next/link'
 import { RiUser2Fill, RiUser3Fill } from "react-icons/ri";
 

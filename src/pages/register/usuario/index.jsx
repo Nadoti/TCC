@@ -1,4 +1,4 @@
-import * as S from './styles'
+import * as S from '../../../styles/register/usuario/styles'
 import Link from 'next/link'
 import useForm from '../../../hooks/useForm'
 
@@ -14,7 +14,7 @@ import useForm from '../../../hooks/useForm'
 
 export default function RegisterUser() {
 
-  const email = useForm('email')
+  //const email = useForm('email')
 
   return (
     <S.Container>
