@@ -61,13 +61,18 @@ export const Img = styled.img`
 `
 
 
-export const ContentLogin = styled.div`
+export const ContentLogin = styled.form`
   
   border: 2px solid #B4E4CA;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding: 10px;
+
+  button {
+    border-radius: 10px;
+  }
   
 `
 
@@ -88,7 +93,7 @@ export const BundlerInput = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  padding: 0 10px;
   margin-bottom: 40px;
+
   
 `

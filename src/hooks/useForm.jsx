@@ -19,10 +19,10 @@ function useForm(type) {
   function validate(val) {
     if(!type) {
       return true
-    } else if(value.length === 0) {
+    } else if(val.length === 0) {
       setError('campo não pode ser vazio')
       return false
-    } else if(types[type] && !types[type].regex.test(value)) {
+    } else if(types[type] && !types[type].regex.test(val)) {
       setError(types[type].message)
       return false
     } else {
@@ -42,7 +42,8 @@ function useForm(type) {
     onChange,
     error,
     validate: () => validate(value),
-    onBlur: () => validate(value)
+    onBlur: () => validate(value),
+    typeMain: type
   }
 }
 

@@ -18,8 +18,10 @@ export const ContainerInput = styled.div`
     margin: 0;
     text-align: left;
     max-width: 400px;
-
   }
+
+  
+  
 `
 
 export const InputStyles = styled.input`
@@ -35,7 +37,11 @@ export const InputStyles = styled.input`
 
   &:focus, &:hover {
     border: 2px solid #03CC71;
-    border-color: ${props => props.error && 'red'}
+    border-color: ${props => props.error && 'red'};
+
+    & + label {
+      color: ${props => props.error ? 'red' : `#03CC71` };
+    }
   }
 
   &:focus + label {
@@ -55,4 +61,6 @@ export const InputStyles = styled.input`
     color: #03CC71;
     color: ${props => props.error && 'red'};
   }
+
+  
 `

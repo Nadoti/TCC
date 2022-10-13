@@ -34,3 +34,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+# // {
+# //   "extends": ["next/babel","next/core-web-vitals"]
+# // }
+# // {
+# //   "presets": ["next/babel"],
+# //   "plugins": [["styled-components", { "ssr": true,"displayName": true,
+# //     "preprocess": false }]]
+# //  }  
