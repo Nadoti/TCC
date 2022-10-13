@@ -19,6 +19,7 @@ export const Nav = styled.nav`
 export const Logo = styled.img`
   width: 70px;
   margin-top: 30px;
+  cursor: pointer;
 `
 
 export const Navigation = styled.ul`

@@ -18,7 +18,7 @@ export function Header() {
   return (
     <S.Container>
       <S.Nav>
-        <Link href="/">
+        <Link href="/a">
           <S.Logo src="/images/logo.svg" alt="Logo"/>
         </Link>
         <S.Navigation>
