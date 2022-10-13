@@ -18,7 +18,7 @@ export function Header() {
   return (
     <S.Container>
       <S.Nav>
-        <Link href="/a">
+        <Link href="/">
           <S.Logo src="/images/logo.svg" alt="Logo"/>
         </Link>
         <S.Navigation>
@@ -37,7 +37,7 @@ export function Header() {
           <S.TitleMain>Mantenha-se sempre <br /> <span>saudável</span></S.TitleMain>
           <S.SubInfo>Plataforma de atendimento em tempo real <br /> com profissionais da área de nutrição</S.SubInfo>
           <S.Register>
-            <Link href="register">Cadastre-se</Link>
+            <Link href="/register">Cadastre-se</Link>
           </S.Register>
           
         </S.Info>
