@@ -3,13 +3,30 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   max-width: 900px;
-  margin: 200px auto auto auto;
+  margin: 300px auto auto auto;
 
 
 `
 
 export const Content = styled.div`
   width: 100%;
+  margin-top: 60px;
+
+  h2 {
+    font-size: 40px;
+    color: #80B2A6;
+    text-align: center;
+    padding: 60px 0;
+
+    &::after {
+      content: '';
+      width: 50px;
+      height: 2px;
+      background: #BAE7DC;
+      display: block;
+      margin: 20px auto;
+    }
+  }
 
 `
 
@@ -49,7 +66,7 @@ export const Options = styled.div`
       margin-bottom: 40px;
 
       svg {
-        color: red;
+        color: #BAE3CB;
       }
     }
 
@@ -63,9 +80,20 @@ export const Options = styled.div`
       display: block;
       width: 100%;
       height: 3px;
-      background: red;
+      background: #30845D;
       position: absolute;
       bottom: 0;
+    }
+
+    &.ativo {
+      cursor: auto;
+
+      span {
+        svg {
+          color: #30845D;
+          scale: none;
+        }
+      }
     }
   }
 `

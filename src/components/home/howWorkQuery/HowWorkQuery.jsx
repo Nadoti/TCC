@@ -37,7 +37,9 @@ export function HowWorkQuery() {
 
   return (
     <S.Container>
+      
       <S.Content>
+        <h2>Conheça como funciona as consultas</h2>
         <S.Options>
           {options?.map((option) => (
             <div key={option.id} className={option.class}>
