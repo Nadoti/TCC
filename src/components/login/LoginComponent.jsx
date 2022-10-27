@@ -43,7 +43,7 @@ export function LoginComponent({text, img}) {
             />
             <Button><RiLoginBoxLine />Entrar</Button>
           </S.Login>
-          <S.Register>Não é cadastrado? crie sua conta <Link href="/register">aqui</Link> </S.Register>
+          <S.Register>Não é cadastrado? crie sua conta <Link href="/register/usuario">aqui</Link> </S.Register>
         </S.ContentLoginUser>
         
       </S.LoginContainer>

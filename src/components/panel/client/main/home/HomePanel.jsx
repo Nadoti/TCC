@@ -1,11 +1,11 @@
+import React from "react";
 import * as S from "./styles";
 import { MdOutlineQueryStats,  } from "react-icons/md";
 import { AiOutlineUsergroupAdd } from "react-icons/ai";
 
-
 export function HomePanel() {
+  
 
-  //const teste = window. screen. width
 
   return (
     <S.Container>
@@ -22,13 +22,21 @@ export function HomePanel() {
             <AiOutlineUsergroupAdd fontSize="40px"/>
             <h2>Nova Consulta</h2>
           </div>
-          <a href="/novaconsulta">Nova Consulta</a>
+          <button onClick={openModal}>Nova Consulta</button>
         </S.AppointmentScheduled>
         
       </S.DashboardTop>
     </S.Container>
   )
 }
+
+
+
+
+
+
+
+
 
 /*https://www.tabnews.com.br/henriquemusk/como-faco-rota-privada-no-nextjs
 https://brasiliapp.com.br/

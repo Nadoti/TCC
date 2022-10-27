@@ -61,8 +61,8 @@ export const Img = styled.img`
 `
 
 
-export const ContentLogin = styled.form`
-  
+export const ContentForm = styled.form`
+  position: relative;
   border: 2px solid #B4E4CA;
   border-radius: 20px;
   display: flex;
@@ -94,6 +94,25 @@ export const BundlerInput = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   margin-bottom: 40px;
-
+  flex-wrap: wrap;
   
+`
+
+export const Back = styled.a`
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 30px;
+  color: #03CC71;
+  border: 1px solid #03CC71;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  border-radius: 50%;
+
+  &:hover {
+    filter: brightness(1.2);
+    scale: 1.1;
+  }
 `

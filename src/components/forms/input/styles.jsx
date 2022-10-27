@@ -62,5 +62,11 @@ export const InputStyles = styled.input`
     color: ${props => props.error && 'red'};
   }
 
+  &:disabled {
+    background: #DDDBDB;
+    outline: none;
+    border: none;
+    cursor: no-drop;
+  }
   
 `

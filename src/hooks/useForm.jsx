@@ -42,8 +42,7 @@ function useForm(type) {
     onChange,
     error,
     validate: () => validate(value),
-    onBlur: () => validate(value),
-    typeMain: type
+    onBlur: () => validate(value)
   }
 }
 

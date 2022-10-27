@@ -43,7 +43,7 @@ export const AppointmentScheduled = styled.div`
     font-size: 18px;
   }
 
-  a {
+  button {
     display: inline-block;
     font-family: monospace;
     font-size: 18px;
@@ -52,6 +52,7 @@ export const AppointmentScheduled = styled.div`
     border-radius: 10px;
     color: #21A980;
     font-weight: bold;
+    border: none;
     transition: all .3s ease;
 
     &:hover {
