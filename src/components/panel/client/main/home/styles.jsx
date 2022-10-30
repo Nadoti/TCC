@@ -43,7 +43,7 @@ export const AppointmentScheduled = styled.div`
     font-size: 18px;
   }
 
-  button {
+  a {
     display: inline-block;
     font-family: monospace;
     font-size: 18px;

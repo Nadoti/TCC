@@ -22,7 +22,7 @@ export function HomePanel() {
             <AiOutlineUsergroupAdd fontSize="40px"/>
             <h2>Nova Consulta</h2>
           </div>
-          <button onClick={openModal}>Nova Consulta</button>
+          <a href="/novaConsulta">Nova Consulta</a>
         </S.AppointmentScheduled>
         
       </S.DashboardTop>
