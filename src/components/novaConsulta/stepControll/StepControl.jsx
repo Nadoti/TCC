@@ -8,6 +8,7 @@ export function StepControl({handleClick, currentStep, steps}) {
       <S.BtnStepBack 
         onClick={() => handleClick()}
         currentStep={currentStep}
+        disabled={currentStep === 1 && "disabled"}
       >
         Voltar
       </S.BtnStepBack>

@@ -52,10 +52,10 @@ export function Step({steps, currentStep}) {
         selected: index === 0 ? true : false,
       })
     )
-
+    
     stepsRef.current = stepsState
     const current = updateStep(currentStep -1, stepsRef.current)
-
+    
     setNewStep(current)
   },[steps, currentStep])
 

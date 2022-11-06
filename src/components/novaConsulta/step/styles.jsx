@@ -30,9 +30,9 @@ color: #30845D;
 
 export const StepNumbers = styled.div`
 border-radius: 100%;
-color: ${props => props.valStep.completed ? "#66CB9C" : "rgb(209 213 219)"};
-transition: 1s ease-in-out;
-border: 2px solid ${props => props.valStep.completed ? "#00FFA5" : "rgb(209 213 219)"};
+color: ${props => props.valStep.completed ? "#000" : "#30845D"};
+transition: .5s ease-in-out;
+border: 2px solid ${props => props.valStep.completed ? "#00FFA5" : "#30845D"};
 height: 3rem;
 width: 3rem;
 display: flex;
@@ -40,6 +40,7 @@ align-items: center;
 justify-content: center;
 font-family: "Roboto";
 font-weight: bold;
+background: ${props => props.valStep.completed ? "#00FFA5" : "#fff"};
 `
 
 export const StepTitle = styled.div`
@@ -60,5 +61,5 @@ content: "";
 width: 100%;
 height: 3px;
 transition: 500ms ease-in-out;
-background: ${props => props.valStep.completed ? "#00FFA5" : "#CDCACA"};
+background: ${props => props.valStep.completed ? "#00FFA5" : "#fff"};
 `

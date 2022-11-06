@@ -1,12 +1,15 @@
 import React from 'react'
+import { FormNewQuery } from '../../components/novaConsulta/forms/FormNewQuery'
+import { NewDate } from '../../components/novaConsulta/newDate/NewDate'
 import { Step } from '../../components/novaConsulta/step/Step'
 import { StepControl } from '../../components/novaConsulta/stepControll/StepControl'
+import { ContextCalendarWrapper } from '../../context/CalendarContext'
 import * as S from '../../styles/novaConsulta/styles'
 
 export default function NovaConsulta() {
   const [currentStep, setCurrentStep] = React.useState(1)
 
-  
+
   const steps = [
     "Formulário Pessoal",
     "Escolha a Data",
@@ -15,43 +18,46 @@ export default function NovaConsulta() {
   ]
 
   function stepDisplayChose(step) {
-    switch(step) {
+    switch (step) {
       case 1:
-        return "<Account />"
+        return <FormNewQuery />
       case 2:
-        return "<Details />"
+        return <NewDate />
       case 3:
         return "<Final />"
       case 4:
-      return "<Confirmar Consulta />"
+        return "<Confirmar Consulta />"
       default:
     }
   }
-  
+
   const handleClick = (direction) => {
     let newStep = currentStep
 
     direction === 'next' ? newStep++ : newStep--
-    console.log(newStep)
     newStep > 0 && newStep <= steps.length && setCurrentStep(newStep)
   }
 
   return (
-    <S.NovaConsultaContainer>
-      <S.NovaConsultaContent>
-        <Step 
-          steps={steps}
-          currentStep={currentStep}
-        />
-        <S.MainOptions>
-          {stepDisplayChose(currentStep)}
-        </S.MainOptions>
-      </S.NovaConsultaContent>
-      <StepControl 
-        handleClick={handleClick}
-        currentStep={currentStep}
-        steps={steps}
-      />
-    </S.NovaConsultaContainer>
+    <ContextCalendarWrapper>
+      <S.BgContainer>
+        <S.NovaConsultaContainer>
+          <S.NovaConsultaContent>
+            <Step
+              steps={steps}
+              currentStep={currentStep}
+            />
+            <S.MainOptions>
+              {stepDisplayChose(currentStep)}
+            </S.MainOptions>
+          </S.NovaConsultaContent>
+          <StepControl
+            handleClick={handleClick}
+            currentStep={currentStep}
+            steps={steps}
+          />
+        </S.NovaConsultaContainer>
+      </S.BgContainer>
+    </ContextCalendarWrapper>
   )
 }
